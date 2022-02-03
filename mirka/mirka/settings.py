@@ -76,8 +76,13 @@ WSGI_APPLICATION = 'mirka.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mirkadb',
+        'USER': 'postgres',
+        'PASSWORD': '199828',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        #'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
